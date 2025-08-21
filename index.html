@@ -35,17 +35,18 @@
     .play-hotspot {
       position: absolute;
       left: 50%;
-      top: 88%; /* ⬅ moved further down to match red button */
+      top: 86%;   /* ⬅ moved up a bit */
       transform: translate(-50%, -50%);
-      width: 18%;   /* ⬅ wider to match the PLAY button */
-      height: 12%;  /* ⬅ taller to cover the red button */
+      width: 18%; /* ⬅ good width for red button */
+      height: 10%; /* ⬅ slightly shorter to fit */
       cursor: url('cursor.png') 16 16, pointer;
       background-color: transparent;
       border: none;
+      outline: none; /* remove white outline */
     }
 
-    .play-hotspot:hover {
-      outline: 3px solid rgba(255, 255, 255, 0.3);
+    .play-hotspot:focus {
+      outline: none; /* extra safety */
     }
   </style>
 </head>
