@@ -13,6 +13,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      /* 👇 Custom cursor globally */
+      cursor: url('assets/cursor.png') 16 16, auto;
     }
 
     .container {
@@ -36,13 +39,13 @@
       transform: translate(-50%, -50%);
       width: 12%;
       height: 10%;
-      cursor: pointer;
+      cursor: url('assets/cursor.png') 16 16, pointer; /* 👈 Optional: cursor only on button */
       background-color: transparent;
       border: none;
     }
 
     .play-hotspot:hover {
-      outline: 3px solid rgba(255, 255, 255, 0.3); /* optional hover effect */
+      outline: 3px solid rgba(255, 255, 255, 0.3);
     }
   </style>
 </head>
