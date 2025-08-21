@@ -14,7 +14,6 @@
       justify-content: center;
       align-items: center;
 
-      /* 👇 Custom cursor globally */
       cursor: url('cursor.png') 16 16, auto;
     }
 
@@ -35,25 +34,28 @@
     .play-hotspot {
       position: absolute;
       left: 50%;
-      top: 86%;   /* ⬅ moved up a bit */
+      top: 84%;              /* ⬅ final aligned position */
       transform: translate(-50%, -50%);
-      width: 18%; /* ⬅ good width for red button */
-      height: 10%; /* ⬅ slightly shorter to fit */
+      width: 30%;            /* matches red button width */
+      height: 13%;           /* matches red button height */
+      border-radius: 25px;   /* rounded corners */
       cursor: url('cursor.png') 16 16, pointer;
       background-color: transparent;
       border: none;
-      outline: none; /* remove white outline */
+      outline: none;
     }
 
     .play-hotspot:focus {
-      outline: none; /* extra safety */
+      outline: none;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <img src="title.png" alt="Hand2English Title">
-    <button class="play-hotspot" onclick="window.open('https://hunter-was.github.io/Hand2English.translate/', '_blank')" aria-label="Play"></button>
+    <button class="play-hotspot"
+      onclick="window.open('https://hunter-was.github.io/Hand2English.translate/', '_blank')"
+      aria-label="Play"></button>
   </div>
 </body>
 </html>
