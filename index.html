@@ -5,11 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image Play Button</title>
   <style>
-    /* Simple custom cursor applied to the whole page and button */
-    html, body, button {
-      cursor: url('cursor.png') 16 16;
-    }
-
     html, body {
       margin: 0;
       padding: 0;
@@ -18,7 +13,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow: hidden; /* prevents scrolling */
+      overflow: hidden; /* Prevents scrolling */
+      cursor: url('cursor.png') 16 16, auto;
     }
 
     .container {
@@ -43,6 +39,7 @@
       width: 30%;
       height: 13%;
       border-radius: 25px;
+      cursor: url('cursor.png') 16 16, pointer;
       background-color: transparent;
       border: none;
       outline: none;
@@ -56,9 +53,11 @@
 <body>
   <div class="container">
     <img src="title.png" alt="Hand2English Title">
-    <button class="play-hotspot"
-      onclick="window.open('https://hunter-was.github.io/Hand2English.translate/', '_blank')"
-      aria-label="Play"></button>
+    <button 
+      class="play-hotspot" 
+      onclick="window.open('https://hunter-was.github.io/Hand2English.translate/', '_blank')" 
+      aria-label="Play">
+    </button>
   </div>
 </body>
 </html>
