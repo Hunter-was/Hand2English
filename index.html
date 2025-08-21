@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image Play Button</title>
   <style>
+    /* Apply custom cursor globally */
+    html, body, button {
+      cursor: url('cursor.png') 16 16, auto;
+    }
+
     html, body {
       margin: 0;
       padding: 0;
@@ -13,8 +18,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow: hidden; /* ⬅ prevents scrolling */
-      cursor: url('cursor.png') 16 16, auto;
+      overflow: hidden; /* prevents scrolling */
     }
 
     .container {
@@ -39,7 +43,6 @@
       width: 30%;
       height: 13%;
       border-radius: 25px;
-      cursor: url('cursor.png') 16 16, pointer;
       background-color: transparent;
       border: none;
       outline: none;
