@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Play Button</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      position: relative;
+      width: 90vw;
+      max-width: 1600px;
+      aspect-ratio: 16 / 9;
+    }
+
+    .container img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border-radius: 5px;
+    }
+
+    .play-hotspot {
+      position: absolute;
+      left: 50%;
+      top: 72%;
+      transform: translate(-50%, -50%);
+      width: 12%;
+      height: 10%;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+    }
+
+    .play-hotspot:hover {
+      outline: 3px solid rgba(255, 255, 255, 0.3); /* optional hover effect */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="title.png" alt="Hand2English Title">
+    <button class="play-hotspot" onclick="window.location.href='https://John.com'" aria-label="Play"></button>
+  </div>
+</body>
+</html>
