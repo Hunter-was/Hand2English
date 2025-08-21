@@ -13,7 +13,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-
+      overflow: hidden; /* ⬅ prevents scrolling */
       cursor: url('cursor.png') 16 16, auto;
     }
 
@@ -34,11 +34,11 @@
     .play-hotspot {
       position: absolute;
       left: 50%;
-      top: 84%;              /* ⬅ final aligned position */
+      top: 84%;
       transform: translate(-50%, -50%);
-      width: 30%;            /* matches red button width */
-      height: 13%;           /* matches red button height */
-      border-radius: 25px;   /* rounded corners */
+      width: 30%;
+      height: 13%;
+      border-radius: 25px;
       cursor: url('cursor.png') 16 16, pointer;
       background-color: transparent;
       border: none;
